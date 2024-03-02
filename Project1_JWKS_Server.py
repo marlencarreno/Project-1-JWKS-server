@@ -67,7 +67,7 @@ def jwks():
         traceback.print_exc()
         return jsonify({'error': str(e)}), 500
 
-# Add this function to retrieve valid keys
+# Addinng function to retrieves valid keys
 def get_valid_keys():
     global private_key, public_key, kid, expiry_timestamp
 
